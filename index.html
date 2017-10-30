@@ -1,0 +1,82 @@
+<!Doctype html>
+<html ng-app="footBall">
+	<head>
+
+		<title> Premier League</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                  
+                      <!-- FONT AWESOME -->
+          <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		      <link href="football.css" rel="stylesheet">
+		
+	</head>
+
+	<body ng-controller="totalController as totalCtrl">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+		
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+               <a class="navbar-brand" href="#">Football league</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                     <li><a ng-href="#/main" style="color:red">Kick in to 2015/16</a></li>
+                     <li><a ng-href="#/main2" style="color:red">Kick in to 2016/17</a></li>
+                     <li><a href="#/teams" style="color:red">Team Stats</a></li>
+                </ul>
+              </div>
+            	</div>
+          </nav>
+
+              			
+              			<div class="container-fluid">
+                      <div class="row">
+                      <div class="col-xs-12 intro-image">
+                              <div id="intro-text"><h2 class="text-center"><strong>{{totalCtrl.pageHeading}}</strong>
+                      </h2>
+                      <h3 class="text-center"><strong>{{totalCtrl.pageSubHeading}}</strong></h3></div>
+                        </div>
+                      </div>
+                      
+                    <div ng-view></div> 
+                 </div>
+
+                 <hr style="margin: 10px 0px;">
+                  <footer style="background-color:darkgray;padding: 5px;">
+                     <h3 class="text-center text-muted" style="color:black"> &copy;Footbal Premier - league  </h3>
+                  </footer>
+
+ 						<!-- jQuery library -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                         <!-- Latest compiled JavaScript -->
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+              			
+                        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+                        <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+                         <script type="text/javascript" src="angular/app.js"></script>
+
+                                              <!-- CONTROLLERS   -->
+                        <script type="text/javascript" src="angular/controllers/allMatches.js"></script>
+                        <script type="text/javascript" src="angular/controllers/allMatches2.js"></script>
+                        <script type="text/javascript" src="angular/controllers/singleMatch.js"></script>
+                        <script type="text/javascript" src="angular/controllers/statistics.js"></script>
+
+                        <!-- ROUTE FILE -->
+
+                         <script type="text/javascript" src="angular/route.js"></script>
+                        
+	</body>
+</html>

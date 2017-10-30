@@ -1,0 +1,53 @@
+
+	<div>
+		<h3 class="text-center">This is to virew the details of matches held during the 2016 and 2017 tournament.</h3></br>
+		<h4>Refine your result here : </h4>
+		<h5 style="color:brown">Match day : <input type="text" value="" placeholder="Enter Match Day" ng-model="round"/>
+		<span class="search-center" style="color:brown">Match date : </span>
+		<input type="text" value="" placeholder="Enter Match Date" ng-model="date"/>
+		<span class="search-left" style="color:brown">Search by team name : </span>
+		<input type="text" value="" placeholder="Enter Team1 or Team2" ng-model="search"/>
+		<!--<span class="search-left" style="color:brown">Search by Score : </span>
+		<input type="number" value="" placeholder="Enter score" ng-model="score"/>--></h5><br>
+		<div> 
+			<table class="table table-responsive table-bordered table-condensed" border="1">
+							
+								<caption class="text-center">
+								<h3 style="color:blue">
+								<span><i class=" fa fa-trophy fa-3x text-danger"></i>{{ totalCtrl2.nameSecond }}<i class="fa fa-trophy fa-3x text-danger"></i> </span>
+								</h3>
+							</caption>
+
+								<thead class ="main-head">
+									<tr style="color:#D8FE03">
+							        <th class="colHidden">Day</th>
+							        <th>Date</th>
+							        <th>Team1 vs Team2</th>
+							        <th>Score</th>
+							        <th>Details</th>
+							     </tr>
+						     </thead>
+
+						 <tbody ng-repeat ="items in totalCtrl2.rounds2 | filter : round" class="for-bgimage">
+
+					<tr ng-repeat ="item in items.matches | filter : date | filter : search  | filter : score">
+						  	
+						<td class="colHidden">{{ items.name }}</td>
+						<td>{{ item.date  }}</td>
+						<td>{{ item.team1.key | uppercase  }} vs {{ item.team2.key | uppercase }}</td>
+					  	<td>{{ item.score1 }} - {{ item.score2 }}</td>
+					  	<td><span style = "display:inline-block;" class="text-center"></span>
+						  	<p style = "margin: 5px 0px;">
+							  	<a ng-href="#/match/{{ item.team1.code }}/{{ item.team2.code }}/{{ item.date }}" class="btn btn-default btn-xs round">Details</a>
+						  	</p>
+						</td>
+					</tr>
+
+					  	</tbody>
+
+					</table>
+				</div>
+				</div>
+			</div>
+			
+		

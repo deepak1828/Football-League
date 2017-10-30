@@ -1,0 +1,36 @@
+
+
+			<div class="row actionsMatch">
+				<div class="col-xs-4 col-md-4">
+				
+						<img ng-src = "images/{{ singleCtrl.code1 | lowercase }}.png" class="img-responsive logo-team">
+						<h4 class="text-center">{{ singleCtrl.team1 }}</h4>
+						<h5 class="text-center">Code: {{ singleCtrl.code1 }}</h5>
+						<h5 class="text-center"> Goals : {{ singleCtrl.score1 }}</h5>
+					</div>
+						
+					<div class="col-xs-4 col-md-4 match-center text-center">
+						<h3> {{ singleCtrl.day }}</h3>
+						<hr>
+						<span><i style="display:block;" class="fa fa-bullhorn fa-2x" aria-hidden="true"></i></span>
+						<hr>
+						<h3> {{ singleCtrl.date }}</h3>
+					</div>
+					<div class="col-xs-4 col-md-4">
+					
+						<img ng-src = "images/{{ singleCtrl.code2 | lowercase }}.png" class="img-responsive logo-team">
+						<h4 class="text-center">{{ singleCtrl.team2 }}</h4>
+						<h5 class="text-center">Code: {{ singleCtrl.code2 }}</h5>
+						<h5 class="text-center">Goals : {{ singleCtrl.score2 }}</h5>
+						
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="text-center">{{ singleCtrl.win }}</h2>
+					</div>
+					<div class="col-xs-12 text-center" style="margin-top: 15px;">
+						<button type="button" class="btn btn-info btn-sm" ng-click="singleCtrl.navigateBack()">Back to table</button>
+					</div>
+				</div>

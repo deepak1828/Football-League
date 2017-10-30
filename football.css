@@ -1,0 +1,302 @@
+body{
+	padding-top: 70px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar-right{
+
+	font-size: 1em;
+}
+
+.text-center{
+	float: center;
+}
+.search-center{
+	margin-left: 5%;
+}
+.search-left{
+	margin-left: 5%;
+}
+
+		/***  FADE IN & FADE OUT ANIMATIONS ***/ 
+.page {
+  transition: 0.3s ease-out all;
+}
+
+.page.ng-enter {
+  opacity: 0;
+}
+
+.page.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.page.ng-leave {
+  opacity: 1;
+}
+
+.page.ng-leave.ng-leave-active {
+  opacity: 0;
+}						/** animations end **/
+			
+
+.intro-image{
+	background-image: linear-gradient(rgba(255,255,255,0.3),rgba(11, 11, 11, 0.6)),url("images/trophy.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	}
+
+	#intro-text{
+
+		margin: 5%;
+		color: floralwhite;
+	}
+
+.actions{
+		margin-top: 30px;
+}
+
+.actions1 {
+		margin-top: 30px;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
+    height: 50px;
+	text-align: center;
+	font-size: 1.2em;
+
+}
+
+.trophy {
+			font-size: 1.5em;
+		}	
+
+.table td {
+	text-align: center;
+	color: #FE03C9;
+	 vertical-align: middle !important;
+	font-weight: 300;
+	font-size: 1.2em;
+
+}
+
+.main-head{
+	background-color: #000000;
+	opacity: 0.9;
+	color: bisque;
+}
+
+
+	 /*linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), */
+
+
+.for-bgimage{
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+
+}
+
+.round{
+
+	background-color: #FAFE03;
+	
+}
+
+.logo-team{
+	width: 150px; 
+	height: 150px;
+	margin: 5px auto;
+}
+
+.actionsMatch{
+
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.matchLeft{
+	box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.17);
+	margin-left: 20px;
+
+}
+
+.teamHeading {
+		font-size: 1.5em;
+		margin-top: 10px;
+		}
+
+.teamGoals{
+
+	font-size: 1.4em;
+}
+
+.match-center h3{
+	font-size: 1.5em;
+		}
+
+.matchRight{
+	box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.17);
+	margin-right: 20px;
+}
+
+.stats-input{
+	border: 1px solid #b20f0f;
+}
+
+.stats-bg{
+	background-image: url("images/black.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-color: black;
+	font-weight:800;
+}
+
+#stats-head th{
+	vertical-align: middle;
+	text-align: center;
+	font-size: 1.3em;
+	border: 0px;
+	font-color:black;
+}
+
+
+	@media screen and (max-width: 480px){
+
+
+		.intro-image{
+		min-height: 150px;
+		}
+
+		.trophy {
+			font-size: 14px;
+		}
+
+		.table > thead >tr > th {
+			font-size: 0.8em;
+			
+		}
+
+		.table td {
+
+		font-size: 0.65em;
+
+	}
+
+
+		.colHidden{
+			display: none;
+		}
+		.match-center h4 {
+			font-size: 12px;
+		}
+
+		.logo-team {
+		    width: 100px;
+		    height: 100px;
+		}
+
+
+		.matchLeft{
+			
+			margin-left: 10px;
+		}
+
+		.teamHeading{
+			font-size: 0.9em;
+		}
+		.teamGoals{
+			font-size: 0.8em;
+		}
+
+		.match-center h3{
+			font-size: 0.9em;
+		}
+
+		.matchRight{
+			
+			margin-right: 10px;
+		}
+
+		.teamHeading{
+			font-size: 10px;
+		}
+
+		.stats-bg{
+					
+		font-weight:300;
+		
+		}
+
+		#stats-head th{
+		
+		font-size: 0.7em;
+		
+		}
+
+
+		}
+
+
+@media screen (min-width:481px) and (max-width: 768px){
+	
+
+	.trophy {
+		font-size: 1.5em;
+	}
+
+	.colHidden{
+		display: none;
+		}
+
+		.table td {
+
+		font-size: 0.9em;
+
+	}
+
+	
+	.teamHeading{
+		font-size: 1em;
+		}
+
+		.teamGoals{
+			font-size: 0.9em;
+		}
+
+	.match-center h3{
+
+		font-size: 1.1em;
+	}
+
+	.stats-bg{
+					
+		font-weight:500;
+		
+		}
+
+
+	#stats-head th{
+
+	font-size: 0.9em;
+}
+}
+
+@media screen and (min-width: 993px){
+
+.round{
+	display: block;
+}
+
+.navbar-right{
+
+	font-size: 1.6em;
+}
+
+}
+
